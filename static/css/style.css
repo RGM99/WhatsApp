@@ -9,11 +9,11 @@ body {
     div#container{
 
     /* max-width: 480px; */
-    height: 100vh;
+    /* height: 100vh; */
     margin: auto;
     /* border: 5px solid green; */
     background-color: rgb(43, 40, 40);
-    padding: 10px;
+    /* padding: 10px; */
 
     header{
 
@@ -107,13 +107,15 @@ body {
         /* border: 3px solid black; */
         /* background-color: rgb(160, 53, 53); */
         /* border: 5px solid ; */
-        
+        /* padding: 10px; */
+        /* height: 100vh; */
 
-        height: 780px;
+        /* height: 780px; */
         section#chats {
             /* background-color: grey; */
             height: 100%;
             overflow: scroll;
+            padding: 10px;
             
 
             div#searchbar {
@@ -344,10 +346,11 @@ body {
 
     footer {
         position: fixed;
-        bottom: 5px;
+        bottom: 0;
         height: 80px;
 
         background-color: rgb(43, 40, 40);
+        background-color: aqua;
        
         z-index: 10;
         width: 100%;
@@ -360,18 +363,19 @@ body {
         /* justify-content: center; */
         /* align-items: center; */
         
-        /* overflow: scroll; */
+        overflow:auto;
         
         /* border: 3px solid rgb(224, 4, 4); */
        
         div#selectors {
+            
             width: 100%;
             display: flex;
             /* justify-content: stretch; */
             align-items: center;
             flex-direction: row;
-            /* background-color: antiquewhite;
-             */
+            /* background-color: antiquewhite; */
+             
              /* padding-top: 10px; */
              div.options {
 
@@ -436,5 +440,22 @@ a {
 {
     body{
     background-color: grey;
+    color: aqua;
+    max-width: 480px;
+    
+    
+
+    main {
+        max-width: 100%;
+        background-color: rgb(160, 65, 65);
+        text-overflow: ellipsis;
+        /* overflow: hidden; */
+
+/* text-overflow: ellipsis; */
+
+  /* white-space: nowrap; */
+  
+    }
+
     }
 }
