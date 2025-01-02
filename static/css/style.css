@@ -480,8 +480,8 @@ a {
 @media screen and (max-width:480px)
 {
     body{
-    background-color: rgb(17, 13, 204);
-    color: aqua;
+    /* background-color: rgb(17, 13, 204); */
+    /* color: aqua; */
     max-width: 480px;
     
     ::-webkit-scrollbar {
