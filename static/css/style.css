@@ -8,7 +8,7 @@ body {
 
     div#container{
 
-    /* max-width: 480px; */
+    max-width: 480px;
     /* height: 100vh; */
     margin: auto;
     /* border: 5px solid green; */
@@ -20,7 +20,7 @@ body {
         top: 0;
         height: 70px;
         
-        width: 100%;
+        width: 480px;
         background-color: rgb(43, 40, 40);
         /* background-color: aqua; */
         /* border: 3px solid grey; */
@@ -370,14 +370,14 @@ a {
     footer {
         position: fixed;
         bottom: 0;
-        height: 70px;
+        height: 71px;
         
 
         background-color: rgb(43, 40, 40);
         /* background-color: aqua; */
        
         z-index: 10;
-        width: 100%;
+        width: 480px;
         /* height: 50px; */
         /* padding-bottom: 0; */
         /* margin-bottom: 0; */
