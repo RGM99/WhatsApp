@@ -18,10 +18,11 @@ body {
     header{
         position: fixed;
         top: 0;
-        height: 50px;
+        height: 70px;
         
         width: 100%;
         background-color: rgb(43, 40, 40);
+        /* background-color: aqua; */
         /* border: 3px solid grey; */
         padding-left: 15px;
         /* padding-right: 5px; */
@@ -108,15 +109,30 @@ body {
     }
 
     main{
+/* -------------------------profile photo starts--------------------------------------*/
+a {
+    div.chat {
+        div.photo{
+            height: 200px;
+            width:200px
+        }
+    }
+}
+
+
+
+/* -------------------------profile photo starts--------------------------------------*/
+
         /* border: 3px solid black; */
         /* background-color: rgb(160, 53, 53); */
         /* border: 5px solid ; */
         /* padding: 10px; */
         /* height: 100vh; */
-        margin-top: 50px;
-        margin-bottom: 80px;
+        margin-top: 70px;
+        margin-bottom: 70px;
         width: 100%;
         /* height: 780px; */
+        
         section#chats {
             /* background-color: grey; */
             height: 100%;
@@ -308,6 +324,7 @@ body {
 
                         }
                         div.details {
+                            
 
                             /* background-color: blue ; */
                             width: 85%;
@@ -317,9 +334,9 @@ body {
                                 /* background-color: rgb(218, 132, 19); */
                                 height: 20px;
                                 display: flex;
-                                /* align-items: center; */
+                                /* align-items: end; */
                                 justify-content: space-between;
-                            
+                                
                                 margin-left: 10px;
                            
 
@@ -353,10 +370,11 @@ body {
     footer {
         position: fixed;
         bottom: 0;
-        height: 80px;
+        height: 70px;
+        
 
         background-color: rgb(43, 40, 40);
-        background-color: aqua;
+        /* background-color: aqua; */
        
         z-index: 10;
         width: 100%;
@@ -369,7 +387,7 @@ body {
         /* justify-content: center; */
         /* align-items: center; */
         
-        overflow:auto;
+        /* overflow:auto; */
         
         /* border: 3px solid rgb(224, 4, 4); */
        
@@ -398,20 +416,34 @@ body {
                     height: 100%;
                     /* width: 120px; */
                     /* padding-top: none; */
+                   
 
                     a {
                         text-decoration: none;
                         color: white;
                         /* background-color: rgb(34, 255, 0); */
                         
+                        
 
-                        i {
+                        .bi {
                             font-size: x-large;
+                            line-height: 0;
+                            /* letter-spacing:0cap; */
+                            
                             color: white;
                             /* background-color: aqua; */
+                            /* background-color: rgb(199, 201, 201); */
+                            /* padding: 5px; */
+                            /* padding: 15px; */
+                            /* margin: 100px; */
+                            margin-top: 0;
+                            padding-top: 0;
+                            font-weight: 800;
                             
                             
                         }
+                        
+                        
                        
 
                        
@@ -435,6 +467,9 @@ body {
 
 }
 
+
+
+
 }
 
 a {
@@ -452,11 +487,21 @@ a {
     ::-webkit-scrollbar {
         display: none;
     }
-   
+    
+    header {
+        background-color: antiquewhite;
+        width: 480px;
+        /* display: inline; */
+        /* top: 0; */
+
+       
+        /* border: 3px solid white; */
+    }
+
 
     main {
         max-width: 100%;
-        background-color: rgb(160, 65, 65);
+        /* background-color: rgb(160, 65, 65); */
         /* text-overflow: ellipsis; */
         /* overflow: hidden; */
 
@@ -472,7 +517,7 @@ a {
      main h6
      main p {
         display: inline-block;       /* Ensures the text is treated as a block for overflow control */
-        max-width: 150px;           /* Set a max width for ellipsis effect to trigger */
+        max-width: 200px;           /* Set a max width for ellipsis effect to trigger */
         white-space: nowrap;         /* Prevents the text from wrapping to the next line */
         overflow: hidden;           /* Hides the overflowing text */
         text-overflow: ellipsis;    /* Displays the ellipsis when text overflows */
