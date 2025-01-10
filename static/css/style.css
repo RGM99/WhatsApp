@@ -8,7 +8,7 @@ body {
 
     div#container{
 
-    max-width: 480px;
+    /* max-width: 480px; */
     /* height: 100vh; */
     margin: auto;
     /* border: 5px solid green; */
@@ -20,7 +20,8 @@ body {
         top: 0;
         height: 70px;
         
-        width: 480px;
+        /* width: 480px; */
+        width: 100%;
         background-color: rgb(43, 40, 40);
         /* background-color: aqua; */
         /* border: 3px solid grey; */
@@ -377,7 +378,7 @@ a {
         /* background-color: aqua; */
        
         z-index: 10;
-        width: 480px;
+        width: 100%;
         /* height: 50px; */
         /* padding-bottom: 0; */
         /* margin-bottom: 0; */
@@ -477,7 +478,7 @@ a {
     color: white;
 }
 
-@media screen and (max-width:480px)
+@media screen and (max-width:470px)
 {
     body{
     /* background-color: rgb(17, 13, 204); */
