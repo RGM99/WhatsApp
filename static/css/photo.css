@@ -1,41 +1,46 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-  }
+
+
+
+/* Container styles */
+.image-container {
+  position: relative;
+  top: 70px;
+
+  display: inline-block;
+}
+
+/* Image styles */
+.image-container img {
+  width: 40px; /* Initial image size */
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+/* Scale the image on focus */
+.image-container:focus-within img {
+  transform: scale(2); /* Increase size on click */
+  position: fixed;
+  top: 80px;
+  left: 100px;
+}
+
+/* Overlay styles to detect outside click */
+.image-container .overlay {
+  position: fixed;
+  top: 70px;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  display: none; /* Hide initially */
+  background: rgba(0, 0, 0, 0); /* Transparent background */
+}
+
+/* Show overlay when the container is focused */
+.image-container:focus-within .overlay {
+  display: block;
+}
+
+#vision {
+  display: none;
   
-  .gallery {
-    display: flex;
-    gap: 20px;
-  }
-  
-  img {
-    max-width: 150px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-  
-  img:target {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(2);
-    z-index: 10;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  }
-  
-  .close-area {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    background: transparent;
-  }
-  
+}

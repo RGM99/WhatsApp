@@ -81,17 +81,23 @@ body {
                     }
 
                     .dropdown-menu {
-                        background-color: black;
+                        background-color: rgb(43, 41, 41);
                         /* border: 5px solid blue; */
                         color: white;
-                       position: sticky;
-                       top: 80px;
+                       /* position: absolute; */
+                       /* top: 30px; */
                        right: 0;
+                       
 
                         li {
                             
+
+                            
                                 a.dropdown-item {
                                     color: white;
+                                    height: 60px;
+                                    width: 250px;
+                                    
                                 }
                             
                         }
@@ -125,6 +131,15 @@ body {
     ::-webkit-scrollbar {
         display: none;
     }
+    .close-area {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        background: transparent;
+      }
 
     main{
 /* -------------------------profile photo starts--------------------------------------*/
@@ -138,16 +153,32 @@ body {
             
             #pp {
                 border: 3px solid green;
+                /* transition: all ease 0.3s; */
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                overflow: hidden;
             }
-            #pp :active {
-                width: 90px;
-                height: 90px;
-            }
+             #pp :active {
+                width: 300px; 
+                height: 250px;
+                /* width: 250px; */
+                /* background-color: aqua; */
+                border: black;
+                position: absolute;
+                top: 70px; 
+
+                padding: 5px;
+                /* border: 3px solid blue; */
+                z-index: 100;
+                /* transition: all ease 0.8s; */
+            } 
 
             img {
                 height: 100%;
                 width: 100%;
-            }
+            }       
+ 
             
         }
 
@@ -155,11 +186,6 @@ body {
 
 /* -------------------------profile photo starts--------------------------------------*/
 
-        /* border: 3px solid black; */
-        /* background-color: rgb(160, 53, 53); */
-        /* border: 5px solid ; */
-        /* padding: 10px; */
-        /* height: 100vh; */
         margin-top: 70px;
         margin-bottom: 70px;
         width: 100%;
@@ -219,10 +245,7 @@ body {
                 /* background-color: grey; */
                 transition: background-color 1s ease-in;
                
-                /* padding: 10px; */
-                /* display: flex; */
-                /* align-items: center; */
-                /* transition-duration: 2s; */
+              
 
                 a {
                                     
@@ -410,18 +433,9 @@ body {
        
         z-index: 10;
         width: 100%;
-        /* height: 50px; */
-        /* padding-bottom: 0; */
-        /* margin-bottom: 0; */
-        /* width: 475px; */
-       
+      
         display: flex;
-        /* justify-content: center; */
-        /* align-items: center; */
-        
-        /* overflow:auto; */
-        
-        /* border: 3px solid rgb(224, 4, 4); */
+      
        
         div#selectors {
             
@@ -430,6 +444,7 @@ body {
             /* justify-content: stretch; */
             align-items: center;
             flex-direction: row;
+            gap: 20px;
             /* background-color: antiquewhite; */
              
              /* padding-top: 10px; */
@@ -505,7 +520,7 @@ body {
 }
 
 main span,
-main h6
+main h6,
 main p {
    display: inline-block;       /* Ensures the text is treated as a block for overflow control */
    max-width: 80%;           /* Set a max width for ellipsis effect to trigger */
@@ -546,7 +561,7 @@ a {
 
    
      main span,
-     main h6
+     main h6,
      main p {
         display: inline-block;       /* Ensures the text is treated as a block for overflow control */
         max-width: 200px;           /* Set a max width for ellipsis effect to trigger */
@@ -573,12 +588,7 @@ a {
     
     header {
         background-color: antiquewhite;
-        width: 100%;
-        /* display: inline; */
-        /* top: 0; */
 
-       
-        /* border: 3px solid white; */
     }
 
 
@@ -588,7 +598,7 @@ a {
 
    
      main span,
-     main h6
+     main h6,
      main p {
         display: inline-block;       /* Ensures the text is treated as a block for overflow control */
         max-width: 100px;           /* Set a max width for ellipsis effect to trigger */
@@ -653,30 +663,19 @@ a {
     header {
         background-color: antiquewhite;
         width: 100%;
-        /* display: inline; */
-        /* top: 0; */
-
-       
-        /* border: 3px solid white; */
+      
     }
 
 
     main {
         max-width: 100%;
-        /* background-color: rgb(160, 65, 65); */
-        /* text-overflow: ellipsis; */
-        /* overflow: hidden; */
-
-        /* text-overflow: ellipsis; */
-
-        /* white-space: nowrap; */
       
   
     }
 
    
      main span,
-     main h6
+     main h6,
      main p {
         display: inline-block;       /* Ensures the text is treated as a block for overflow control */
         max-width: 50%;           /* Set a max width for ellipsis effect to trigger */
