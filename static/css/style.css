@@ -74,25 +74,42 @@ body {
     
     
     
-            div.dropdown {
+                div.dropdown {
                 /* background-color: aqua; */
-                button:focus {
-                    border: none;
-                }
-            }   
+                    button:focus {
+                        border: none;
+                    }
+
+                    .dropdown-menu {
+                        background-color: black;
+                        /* border: 5px solid blue; */
+                        color: white;
+                       position: sticky;
+                       top: 80px;
+                       right: 0;
+
+                        li {
+                            
+                                a.dropdown-item {
+                                    color: white;
+                                }
+                            
+                        }
+                    }
+                }   
             
-            span.spacer:active {
-                height: 39px;
-                width: 39px;
+                span.spacer:active {
+                    height: 39px;
+                    width: 39px;
                 
                 
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                overflow: hidden;
-                /* transition-duration: 2s; */
-            }
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    /* transition-duration: 2s; */
+                }
 
                 
             }
@@ -111,14 +128,28 @@ body {
 
     main{
 /* -------------------------profile photo starts--------------------------------------*/
-a {
-    div.chat {
-        div.photo{
-            height: 200px;
-            width:200px
+
+    #photo,
+    .profile-photo{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            /* overflow: hidden; */
+            
+            #pp {
+                border: 3px solid green;
+            }
+            #pp :active {
+                width: 90px;
+                height: 90px;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+            
         }
-    }
-}
 
 
 
@@ -424,12 +455,12 @@ a {
                         color: white;
                         /* background-color: rgb(34, 255, 0); */
                         
-                        
+                        padding: 2px;
 
                         .bi {
                             font-size: x-large;
                             line-height: 0;
-                            /* letter-spacing:0cap; */
+                            letter-spacing:0cap;
                             
                             color: white;
                             /* background-color: aqua; */
@@ -437,7 +468,7 @@ a {
                             /* padding: 5px; */
                             /* padding: 15px; */
                             /* margin: 100px; */
-                            margin-top: 0;
+                            margin-top: 0px;
                             padding-top: 0;
                             font-weight: 800;
                             
@@ -473,6 +504,18 @@ a {
 
 }
 
+main span,
+main h6
+main p {
+   display: inline-block;       /* Ensures the text is treated as a block for overflow control */
+   max-width: 80%;           /* Set a max width for ellipsis effect to trigger */
+   white-space: nowrap;         /* Prevents the text from wrapping to the next line */
+   overflow: hidden;           /* Hides the overflowing text */
+   text-overflow: ellipsis;    /* Displays the ellipsis when text overflows */
+   vertical-align: middle;     /* Aligns text properly with surrounding icons */
+} 
+
+
 a {
     text-decoration: none;
     color: white;
@@ -492,6 +535,124 @@ a {
     header {
         background-color: antiquewhite;
         width: 480px;
+   }
+
+
+    main {
+        max-width: 100%;
+                 
+  
+    }
+
+   
+     main span,
+     main h6
+     main p {
+        display: inline-block;       /* Ensures the text is treated as a block for overflow control */
+        max-width: 200px;           /* Set a max width for ellipsis effect to trigger */
+        white-space: nowrap;         /* Prevents the text from wrapping to the next line */
+        overflow: hidden;           /* Hides the overflowing text */
+        text-overflow: ellipsis;    /* Displays the ellipsis when text overflows */
+        vertical-align: middle;     /* Aligns text properly with surrounding icons */
+    } 
+
+    }
+}
+
+
+@media screen and (max-width:400px)
+{
+    body{
+    /* background-color: rgb(17, 13, 204); */
+    /* color: aqua; */
+        width: 100%;
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    header {
+        background-color: antiquewhite;
+        width: 100%;
+        /* display: inline; */
+        /* top: 0; */
+
+       
+        /* border: 3px solid white; */
+    }
+
+
+    main {
+        max-width: 100%;
+    }
+
+   
+     main span,
+     main h6
+     main p {
+        display: inline-block;       /* Ensures the text is treated as a block for overflow control */
+        max-width: 100px;           /* Set a max width for ellipsis effect to trigger */
+        white-space: nowrap;         /* Prevents the text from wrapping to the next line */
+        overflow: hidden;           /* Hides the overflowing text */
+        text-overflow: ellipsis;    /* Displays the ellipsis when text overflows */
+        vertical-align: middle;     /* Aligns text properly with surrounding icons */
+    } 
+
+    }
+}
+
+@media screen and (max-width:350px)
+{
+    body{
+    /* background-color: rgb(17, 13, 204); */
+    /* color: aqua; */
+        width: 100%;
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    header {
+        background-color: antiquewhite;
+        width: 100%;
+      }
+
+
+    main {
+        max-width: 100%;
+    
+  
+    }
+
+   
+     main span,
+     main h6
+     main p {
+        display: inline-block;       /* Ensures the text is treated as a block for overflow control */
+        max-width: 90px;           /* Set a max width for ellipsis effect to trigger */
+        white-space: nowrap;         /* Prevents the text from wrapping to the next line */
+        overflow: hidden;           /* Hides the overflowing text */
+        text-overflow: ellipsis;    /* Displays the ellipsis when text overflows */
+        vertical-align: middle;     /* Aligns text properly with surrounding icons */
+    } 
+
+    }
+}
+
+@media screen and (max-width:100px)
+{
+    body{
+    /* background-color: rgb(17, 13, 204); */
+    /* color: aqua; */
+        width: 100%;
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    header {
+        background-color: antiquewhite;
+        width: 100%;
         /* display: inline; */
         /* top: 0; */
 
@@ -518,7 +679,7 @@ a {
      main h6
      main p {
         display: inline-block;       /* Ensures the text is treated as a block for overflow control */
-        max-width: 200px;           /* Set a max width for ellipsis effect to trigger */
+        max-width: 50%;           /* Set a max width for ellipsis effect to trigger */
         white-space: nowrap;         /* Prevents the text from wrapping to the next line */
         overflow: hidden;           /* Hides the overflowing text */
         text-overflow: ellipsis;    /* Displays the ellipsis when text overflows */
