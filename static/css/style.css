@@ -144,26 +144,24 @@ body {
     main{
 /* -------------------------profile photo starts--------------------------------------*/
 
-    #photo,
-    .profile-photo{
+#photo, .profile-photo {
             height: 40px;
             width: 40px;
             border-radius: 50%;
             /* overflow: hidden; */
             
-            #pp {
-                border: 3px solid green;
+            .pp {
+                /* border: 3px solid green; */
                 /* transition: all ease 0.3s; */
                 border-radius: 50%;
                 height: 40px;
                 width: 40px;
                 overflow: hidden;
             }
-             #pp :active {
+             .pp :active {
                 width: 300px; 
                 height: 250px;
-                /* width: 250px; */
-                /* background-color: aqua; */
+                
                 border: black;
                 position: absolute;
                 top: 70px; 
