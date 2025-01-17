@@ -23,10 +23,9 @@ body {
         /* width: 480px; */
         width: 100%;
         background-color: rgb(43, 40, 40);
-        /* background-color: aqua; */
-        /* border: 3px solid grey; */
+        
         padding-left: 15px;
-        /* padding-right: 5px; */
+        
         margin-top: 0;
         z-index: 10;
         display: flex;
@@ -425,7 +424,7 @@ body {
         
 
         background-color: rgb(43, 40, 40);
-        /* background-color: aqua; */
+        
        
         z-index: 10;
         width: 100%;
@@ -440,10 +439,7 @@ body {
             /* justify-content: stretch; */
             align-items: center;
             flex-direction: row;
-            gap: 20px;
-            /* background-color: antiquewhite; */
-             
-             /* padding-top: 10px; */
+            
              div.options {
 
                 /* background-color: beige; */
@@ -474,11 +470,6 @@ body {
                             letter-spacing:0cap;
                             
                             color: white;
-                            /* background-color: aqua; */
-                            /* background-color: rgb(199, 201, 201); */
-                            /* padding: 5px; */
-                            /* padding: 15px; */
-                            /* margin: 100px; */
                             margin-top: 0px;
                             padding-top: 0;
                             font-weight: 800;
@@ -515,7 +506,7 @@ body {
 
 }
 
-main span
+main span,
 main h6
 main p {
    display: inline-block;       /* Ensures the text is treated as a block for overflow control */
@@ -557,8 +548,8 @@ a {
 
    
      main span
-     main h6
-     main p {
+    
+      {
         display: inline-block;       /* Ensures the text is treated as a block for overflow control */
         max-width: 200px;           /* Set a max width for ellipsis effect to trigger */
         white-space: nowrap;         /* Prevents the text from wrapping to the next line */
@@ -593,9 +584,8 @@ a {
     }
 
    
-     main span
-     main h6
-     main p {
+     
+     main span {
         display: inline-block;       /* Ensures the text is treated as a block for overflow control */
         max-width: 100px;           /* Set a max width for ellipsis effect to trigger */
         white-space: nowrap;         /* Prevents the text from wrapping to the next line */
@@ -631,9 +621,8 @@ a {
     }
 
    
-     main span
-     main h6
-     main p {
+    
+     main span {
         display: inline-block;       /* Ensures the text is treated as a block for overflow control */
         max-width: 90px;           /* Set a max width for ellipsis effect to trigger */
         white-space: nowrap;         /* Prevents the text from wrapping to the next line */
@@ -670,9 +659,8 @@ a {
     }
 
    
-     main span
-     main h6
-     main p {
+     
+     main span {
         display: inline-block;       /* Ensures the text is treated as a block for overflow control */
         max-width: 50%;           /* Set a max width for ellipsis effect to trigger */
         white-space: nowrap;         /* Prevents the text from wrapping to the next line */
