@@ -8,7 +8,7 @@ body {
 
     div#container{
 
-    /* max-width: 480px; */
+    max-width: 480px;
     /* height: 100vh; */
     margin: auto;
     /* border: 5px solid green; */
@@ -20,7 +20,7 @@ body {
         top: 0;
         height: 70px;
         
-        /* width: 480px; */
+        max-width: 480px;
         width: 100%;
         background-color: rgb(43, 40, 40);
         
@@ -427,6 +427,7 @@ body {
         
        
         z-index: 10;
+        max-width: 480px;
         width: 100%;
       
         display: flex;
